@@ -25,6 +25,7 @@ footer {
 header .header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 /*setting the container main to flex in the column direction, and arranging the items to have space in between*/
 main {
@@ -84,7 +85,7 @@ article {
   background-color: rgb(79, 85, 85);
   color: white;
   margin: 10px;
-  padding: 10px;
+  padding: 30px;
   font-size: 25px;
 }
 /*setting a word spacing for the paragraph*/
