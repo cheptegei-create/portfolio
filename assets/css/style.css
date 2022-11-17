@@ -1,0 +1,184 @@
+/*using the universal element to set a uniform font family for the whole page*/
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/*setting items in the body section to flex in the column direction*/
+body {
+  display: flex;
+  flex-direction: column;
+}
+/*setting the header to flex in the row direction and arranging the items in it*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*setting the dimensions, background color, and aligning the contents for the header and footer*/
+header,
+footer {
+  text-align: center;
+  width: 100%;
+  line-height: 50px;
+  background-color: burlywood;
+}
+
+header .header {
+  display: flex;
+  flex-direction: column;
+}
+/*setting the container main to flex in the column direction, and arranging the items to have space in between*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/*setting the container section to display grid and arranging the cards within the grid*/
+section {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 2fr);
+}
+/*Positioning and adjusting the size of all h3 tags*/
+h3 {
+  display: flex;
+  position: relative;
+  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: 100px;
+  line-height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 200%;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+/*Positioning the nav-bar and profile picture in the header*/
+aside {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+}
+/*aligning the nav links in the nav bar*/
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 200px;
+  line-height: 65px;
+}
+/*sizing the profile photo and shaping it to fit the header*/
+aside .profile-photo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+/*setting the background color and positioning the about me section*/
+article {
+  background-color: rgb(79, 85, 85);
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  font-size: 25px;
+}
+/*setting a word spacing for the paragraph*/
+article p {
+  word-spacing: 2px;
+}
+/*positioning and setting the contact me setion to display flex*/
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*setting a border and radius for the form section*/
+.contact-me form {
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+/*positioning and editing the class cards selectors*/
+.card {
+  display: flex;
+  flex-direction: column;
+  border-width: 2px;
+  padding: 10px;
+  margin: 20px;
+  width: auto;
+}
+/*formating the positioning of the image in the class card element*/
+.card img {
+  width: auto;
+  height: 200px;
+  margin-top: 10px;
+}
+/*formats the header for the class card element*/
+.card h4 {
+  justify-content: left;
+  position: relative;
+  background-color: burlywood;
+  margin: 5px;
+  margin-top: -20px;
+  padding: 5px;
+  border: 1px solid black;
+  font-size: 150%;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+/*styles the texts in the paragraph section of th eclass card element*/
+.card p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*created a box-shadow effect that activates when the user hovers over the card element*/
+.card:hover,
+.card h4 {
+  box-shadow: inset 0px 0px 8px rgb(223, 101, 20), 0 0 15px rgb(223, 101, 20);
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
