@@ -12,6 +12,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: white;
 }
 /*setting the dimensions, background color, and aligning the contents for the header and footer*/
 header,
@@ -19,7 +20,7 @@ footer {
   text-align: center;
   width: 100%;
   line-height: 50px;
-  background-color: burlywood;
+  background-color: rgb(48, 48, 175);
 }
 
 header .header {
@@ -32,6 +33,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+/*selects the font size of the h1 heading on the header*/
+h1 {
+  font-size: 250%;
 }
 /*setting the container section to display grid and arranging the cards within the grid*/
 section {
@@ -63,16 +68,28 @@ aside {
   align-items: center;
   width: 700px;
 }
-/*aligning the nav links in the nav bar*/
-nav ul {
+/*styling the nav to display flex and centre the contents*/
+nav {
+  display: none;
+}
+/*enables the nav area to display upon hovering*/
+aside:hover nav {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+}
+/*styling the contents in the buttons*/
+button {
   justify-content: center;
   align-items: center;
   margin: 10px;
   width: 200px;
   line-height: 65px;
 }
+/*Enables the button on the nav bar to tranform upon hovering*/
+button:hover {
+  opacity: 0.7;
+}
+
 /*sizing the profile photo and shaping it to fit the header*/
 aside .profile-photo {
   width: 100px;
@@ -80,10 +97,9 @@ aside .profile-photo {
   margin-right: 20px;
   border-radius: 50px;
 }
+
 /*setting the background color and positioning the about me section*/
 article {
-  background-color: rgb(79, 85, 85);
-  color: white;
   margin: 10px;
   padding: 30px;
   font-size: 25px;
@@ -91,6 +107,18 @@ article {
 /*setting a word spacing for the paragraph*/
 article p {
   word-spacing: 2px;
+}
+/*styling the input section of the contact me area*/
+input[type=text], textarea {
+    width: 100%;
+}
+/*placing a pseudo-element in between cheptegei abd create on the header*/
+.seo::before {
+  content: "♚";
+}
+/*Makes the profile photo to change opacity upon hovering*/
+.profile-photo:hover {
+  opacity: 0.7;
 }
 /*positioning and setting the contact me setion to display flex*/
 .contact-me {
@@ -101,11 +129,23 @@ article p {
 }
 /*setting a border and radius for the form section*/
 .contact-me form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 3px solid black;
   padding: 10px;
   border-radius: 10px;
   margin: 20px;
+  width: 70%;
 }
+/*styling the contents in contact me section*/
+.contact-me form p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
 /*positioning and editing the class cards selectors*/
 .card {
   display: flex;
@@ -125,7 +165,8 @@ article p {
 .card h4 {
   justify-content: left;
   position: relative;
-  background-color: burlywood;
+  background-color: rgb(48, 48, 175);
+  color: white;
   margin: 5px;
   margin-top: -20px;
   padding: 5px;
@@ -136,15 +177,18 @@ article p {
 }
 /*styles the texts in the paragraph section of th eclass card element*/
 .card p {
+  display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
+  justify-content: center;
+  align-content: center;
 }
 /*created a box-shadow effect that activates when the user hovers over the card element*/
 .card:hover,
 .card h4 {
-  box-shadow: inset 0px 0px 8px rgb(223, 101, 20), 0 0 15px rgb(223, 101, 20);
+  box-shadow: inset 0px 0px 8px rgb(48, 48, 175), 0 0 15px rgb(48, 48, 175);
 }
-
+/*styling the social media links in the footer*/
 .fa {
   padding: 10px;
   font-size: 30px;
@@ -182,4 +226,55 @@ article p {
 .fa-instagram {
   background: #125688;
   color: white;
+}
+/*Enabling the website to be responsive to different screens*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  header {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  aside {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+  section {
+    grid-template-columns: repeat(2, 3fr);
+  }
+  nav {
+    display: none;
+  }
+  aside:hover nav {
+    display: flex;
+    flex-direction: column;
+  }
+  aside .profile-photo {
+    margin: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  aside {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+  section {
+    grid-template-columns: repeat(1, 6fr);
+  }
+  nav {
+    display: none;
+  }
+  aside:hover nav {
+    display: flex;
+    flex-direction: column;
+  }
+  aside .profile-photo {
+    margin: 10px;
+    padding-left: 10px;
+  }
 }
