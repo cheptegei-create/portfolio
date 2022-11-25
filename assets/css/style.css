@@ -212,6 +212,11 @@ input[type=text], textarea {
   box-shadow: inset 0px 0px 8px var(--blue), 0 0 15px var(--blue);
   transform: scale(1.2);
 }
+
+.button {
+  display: flex;
+  justify-content: center;
+}
 /*styling the social media links in the footer*/
 .fa {
   padding: 10px;
