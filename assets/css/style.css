@@ -51,7 +51,7 @@ h1 {
 section {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(3, 3fr);
 }
 /*Positioning and adjusting the size of all h3 tags*/
 h3 {
@@ -268,7 +268,7 @@ input[type=text], textarea {
     width: 100%;
   }
   section {
-    grid-template-columns: repeat(2, 3fr);
+    grid-template-columns: repeat(2, 5fr);
   }
   nav {
     display: none;
@@ -293,7 +293,7 @@ input[type=text], textarea {
     width: 100%;
   }
   section {
-    grid-template-columns: repeat(1, 6fr);
+    grid-template-columns: repeat(1, 9fr);
   }
   nav {
     display: none;
