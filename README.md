@@ -13,7 +13,7 @@ Employers in the tech industry prefer candidates with well prepared portfolios. 
 
 ## Installation
 
-Just click the follow the link to view my portfolio https://cheptegei-create.github.io/twochallenge/
+Just click the follow the link to view my portfolio https://cheptegei-create.github.io/portfolio/
 
 ## Usage
 
